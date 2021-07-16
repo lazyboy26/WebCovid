@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+#judul{
+    background: rgb(226, 226, 226);
+}
+
+#darurat{
+    font-size: 12px;
+    margin-top: -16px;
+}
+
+.bendera{
+    width: 25px;
+}
+
+#card{
+    display: inline-flex;
+}
+
+#tableRow{
+    border-right: 1px solid black;
+    border-collapse: collapse;
+    padding:5px;
+  }
