@@ -1,4 +1,4 @@
-# webCovidStatic
+# Web Covid
 
 Nama : Yudha Wahyu Iskandar <br>
 Prodi : Sistem Informasi <br>
