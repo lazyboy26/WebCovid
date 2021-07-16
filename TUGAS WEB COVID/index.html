@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <!-- Judul -->
+    <h1 class="text-center m-3 p-2" id="judul">COVID-19 CORONAVIRUS PANDEMIC COUNT</h1>
+
+    <!-- Konten -->
+
+    <div class="text-center container" id="container">
+        <h6>Country : Indonesia <img class="bendera border-1 border"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/900px-Flag_of_Indonesia.svg.png"
+                alt=""></h6>
+        <p>Last updated : July 16, 2021, 05:48 GMT</p>
+        <p id="darurat">LAYANAN DARURAT COVID-19 <br>
+            119 / 0813 8837 6955
+        </p>
+        <ul class="nav nav-tabs justify-content-center m-3" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                    role="tab" aria-controls="home" aria-selected="true">Info Total Kasus</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                    role="tab" aria-controls="profile" aria-selected="false">Info Vaksin</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button"
+                    role="tab" aria-controls="contact" aria-selected="false">Apa itu COVID-19?</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <!-- Card -->
+                <div id="card">
+                    <div class="card m-2" style="width: 18rem;">
+                        <div class="card-header">
+                            Kasus
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li id="covCount" class="list-group-item">
+                                2,73 jt</li>
+                            <li class="list-group-item">+56.757</li>
+                        </ul>
+                    </div>
+                    <div class="card m-2" style="width: 18rem;">
+                        <div class="card-header">
+                            Sembuh
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">2,18 jt</li>
+                            <li class="list-group-item">+19.049</li>
+                        </ul>
+                    </div>
+                    <div class="card m-2" style="width: 18rem;">
+                        <div class="card-header">
+                            Meninggal
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">70.192</li>
+                            <li class="list-group-item">+982</li>
+                        </ul>
+                    </div>
+                </div>
+                <p>"+" menampilkan kasus baru yang dilaporkan kemarin <a
+                        href="https://support.google.com/websearch/answer/9814707?p=cvd19_statistics&hl=id&visit_id=637620246634906434-2399716493&rd=1">Tentang
+                        data ini</a></p>
+                <!-- End Card -->
+                <button type="button" class="btn btn-outline-dark"><a
+                        href="https://news.google.com/covid19/map?hl=id&mid=%2Fm%2F03ryn&gl=ID&ceid=ID%3Aid"
+                        class="text-decoration-none">Lokasi dan
+                        data statistik
+                        lainnya</a></button>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <table class="text-center m-auto mb-3">
+                    <tr id="tableRow" class="p-5">
+                        <th>Dosis Diberikan</th>
+                        <th>Divaksinasi lengkap</th>
+                    </tr>
+                    <tr>
+                        <td>51,3 jt</td>
+                        <td>15 jt</td>
+                    </tr>
+                </table>
+                <p><strong> % populasi divaksinasi lengkap</strong></p>
+                <div class="progress m-auto w-50">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
+                        style="width: 5%;" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">5,5%</div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <p class="m-auto w-50">
+                    <strong>Apa itu Covid-19 ( CORONAVIRUS )</strong><br>
+                    Penyakit virus corona (COVID-19) adalah penyakit
+                    menular
+                    yang
+                    disebabkan oleh virus corona yang
+                    baru-baru ini ditemukan.
+                    Sebagian besar orang yang tertular COVID-19 akan mengalami gejala ringan hingga sedang, dan akan
+                    pulih tanpa penanganan khusus. <br><br>
+                    <strong>CARA PENYEBARAN VIRUS INI </strong><br>
+                    Virus yang menyebabkan COVID-19 terutama ditransmisikan melalui droplet (percikan air liur) yang
+                    dihasilkan saat orang yang terinfeksi batuk, bersin, atau mengembuskan nafas. Droplet ini terlalu
+                    berat dan tidak bisa bertahan di udara, sehingga dengan cepat jatuh dan menempel pada lantai atau
+                    permukaan lainnya.
+                    Anda dapat tertular saat menghirup udara yang mengandung virus jika Anda berada terlalu dekat dengan
+                    orang yang sudah terinfeksi COVID-19. Anda juga dapat tertular jika menyentuh permukaan benda yang
+                    terkontaminasi lalu menyentuh mata, hidung, atau mulut Anda. <br><br>
+                    <a href="https://covid19.go.id/" class="text-decoration-none text-primary">Pelajari lebih lanjut di
+                        covid19.go.id</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="index.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
