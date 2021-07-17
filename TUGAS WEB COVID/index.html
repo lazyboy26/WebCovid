@@ -11,7 +11,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
-    <title>Hello, world!</title>
+    <title>Covid-19 Count</title>
 </head>
 
 <body>
@@ -47,7 +47,7 @@
                 <!-- Card -->
                 <div id="card">
                     <div class="card m-2" style="width: 18rem;">
-                        <div class="card-header">
+                        <div class="card-header bg-danger text-white">
                             Kasus
                         </div>
                         <ul class="list-group list-group-flush">
@@ -57,7 +57,7 @@
                         </ul>
                     </div>
                     <div class="card m-2" style="width: 18rem;">
-                        <div class="card-header">
+                        <div class="card-header bg-success text-white">
                             Sembuh
                         </div>
                         <ul class="list-group list-group-flush">
@@ -66,7 +66,7 @@
                         </ul>
                     </div>
                     <div class="card m-2" style="width: 18rem;">
-                        <div class="card-header">
+                        <div class="card-header bg-dark text-white">
                             Meninggal
                         </div>
                         <ul class="list-group list-group-flush">
@@ -75,25 +75,25 @@
                         </ul>
                     </div>
                 </div>
-                <p>"+" menampilkan kasus baru yang dilaporkan kemarin <a
+                <p>"+" menampilkan kasus baru yang dilaporkan kemarin <a target="_blank"
                         href="https://support.google.com/websearch/answer/9814707?p=cvd19_statistics&hl=id&visit_id=637620246634906434-2399716493&rd=1">Tentang
                         data ini</a></p>
                 <!-- End Card -->
-                <button type="button" class="btn btn-outline-dark"><a
+                <button type="button" class="btn btn-outline-info"><a
                         href="https://news.google.com/covid19/map?hl=id&mid=%2Fm%2F03ryn&gl=ID&ceid=ID%3Aid"
-                        class="text-decoration-none">Lokasi dan
+                        class="text-decoration-none text-dark" target="_blank">Lokasi dan
                         data statistik
                         lainnya</a></button>
             </div>
             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                 <table class="text-center m-auto mb-3">
-                    <tr id="tableRow" class="p-5">
-                        <th>Dosis Diberikan</th>
-                        <th>Divaksinasi lengkap</th>
+                    <tr>
+                        <th class="p-2" id="tableRow">Dosis Diberikan</th>
+                        <th class="p-2">Divaksinasi lengkap</th>
                     </tr>
                     <tr>
-                        <td>51,3 jt</td>
-                        <td>15 jt</td>
+                        <td class="text-secondary" id="tableRow">51,3 jt</td>
+                        <td class="text-secondary">15 jt</td>
                     </tr>
                 </table>
                 <p><strong> % populasi divaksinasi lengkap</strong></p>
@@ -120,16 +120,26 @@
                     Anda dapat tertular saat menghirup udara yang mengandung virus jika Anda berada terlalu dekat dengan
                     orang yang sudah terinfeksi COVID-19. Anda juga dapat tertular jika menyentuh permukaan benda yang
                     terkontaminasi lalu menyentuh mata, hidung, atau mulut Anda. <br><br>
-                    <a href="https://covid19.go.id/" class="text-decoration-none text-primary">Pelajari lebih lanjut di
+                    <a href="https://covid19.go.id/" target="_blank" class="text-decoration-none text-primary">Pelajari
+                        lebih lanjut di
                         covid19.go.id</a>
                 </p>
             </div>
         </div>
     </div>
-
+    <footer id="footer">
+        <p> Covid-19 Count Website </p>
+        <p><a href="https://www.worldometers.info/">
+                <img src="https://www.worldometers.info/img/worldometers-logo-footer.png" alt="">
+            </a> </p>
+        <span>Stay <p id="slogan"></p>
+        </span>
+    </footer>
+    <!-- Footer -->
     <!-- Optional JavaScript; choose one of the two! -->
-    <script src="index.js"></script>
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="indexjs.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>

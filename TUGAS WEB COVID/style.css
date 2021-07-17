@@ -3,6 +3,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
+#container{
+    width: 100vw;
+    height: 75vh;
+}
+
 #judul{
     background: rgb(226, 226, 226);
 }
@@ -23,5 +28,17 @@
 #tableRow{
     border-right: 1px solid black;
     border-collapse: collapse;
-    padding:5px;
   }
+
+#footer{
+   border-top: 1px solid black;
+   padding: 10px;
+   text-align: center;
+   margin: 0px;
+
+}
+
+#footer p {
+    padding: 0px;
+    margin: 0px;
+}
