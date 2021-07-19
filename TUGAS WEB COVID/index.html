@@ -30,20 +30,24 @@
         </p>
         <ul class="nav nav-tabs justify-content-center m-3" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#Count" type="button"
                     role="tab" aria-controls="home" aria-selected="true">Info Total Kasus</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
-                    role="tab" aria-controls="profile" aria-selected="false">Info Vaksin</button>
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#InfoVaksin"
+                    type="button" role="tab" aria-controls="profile" aria-selected="false">Info Vaksin</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button"
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#Apaitu" type="button"
                     role="tab" aria-controls="contact" aria-selected="false">Apa itu COVID-19?</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#Booster" type="button"
+                    role="tab" aria-controls="contact" aria-selected="false">Mood Booster</button>
             </li>
         </ul>
         <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="tab-pane fade show active" id="Count" role="tabpanel" aria-labelledby="home-tab">
                 <!-- Card -->
                 <div id="card">
                     <div class="card m-2" style="width: 18rem;">
@@ -85,7 +89,7 @@
                         data statistik
                         lainnya</a></button>
             </div>
-            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="tab-pane fade" id="InfoVaksin" role="tabpanel" aria-labelledby="profile-tab">
                 <table class="text-center m-auto mb-3">
                     <tr>
                         <th class="p-2" id="tableRow">Dosis Diberikan</th>
@@ -102,7 +106,7 @@
                         style="width: 5%;" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">5,5%</div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="tab-pane fade" id="Apaitu" role="tabpanel" aria-labelledby="contact-tab">
                 <p class="m-auto w-50">
                     <strong>Apa itu Covid-19 ( CORONAVIRUS )</strong><br>
                     Penyakit virus corona (COVID-19) adalah penyakit
@@ -125,15 +129,18 @@
                         covid19.go.id</a>
                 </p>
             </div>
+            <div class="tab-pane fade" id="Booster" role="tabpanel" aria-labelledby="contact-tab">
+                <button class="btn btn-primary m-3" ondblclick="dblKlik()">Mood Booster</button>
+                <p>Klik 2x</p> <br>
+                <span id="lol"></span>
+            </div>
         </div>
     </div>
-    <footer id="footer">
+    <footer id=" footer" class="text-center">
         <p> Covid-19 Count Website </p>
         <p><a href="https://www.worldometers.info/">
                 <img src="https://www.worldometers.info/img/worldometers-logo-footer.png" alt="">
-            </a> </p>
-        <span>Stay <p id="slogan"></p>
-        </span>
+            </a></p>
     </footer>
     <!-- Footer -->
     <!-- Optional JavaScript; choose one of the two! -->
